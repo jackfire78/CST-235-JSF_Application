@@ -9,8 +9,10 @@ import javax.faces.bean.ViewScoped;
 @ManagedBean
 @ViewScoped
 public class Orders {
+	//create an arrayList of type Order
 	List<Order> orders = new ArrayList<Order>();
 
+	//hardcode some orders into the arrayList
 	public Orders() {
 		orders.add(new Order("00000001","Product1",(float)1.00,1));
 		orders.add(new Order("00000002","Product2",(float)2.00,2));

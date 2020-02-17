@@ -10,8 +10,7 @@ import beans.User;
 
 public class FormController {
 
-	public String onSubmit() {
-		
+	public String onSubmit() {		
 		//Get user managed bean
 		FacesContext context = FacesContext.getCurrentInstance();
 		User user = context.getApplication().evaluateExpressionGet(context, "#{user}", User.class);

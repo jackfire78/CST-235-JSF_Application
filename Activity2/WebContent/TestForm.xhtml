@@ -6,7 +6,7 @@
 <h:head>
 	<h:outputStylesheet library = "css" name = "table-style.css"  /> 	
 </h:head>
- <!-- <h:head><title>JSF Form page</title></h:head>  --> 
+ <!-- Login page a user will see before getting to the response page  --> 
 <h:body> 
 	<ui:composition template = "/layouts/commonLayout.xhtml">
   	<ui:define name = "title">JSF Login Page</ui:define>
@@ -14,8 +14,10 @@
 	
 	<div align = "center">
 	<h:form>
+	<!-- Fields to be filled out and will be used to create user referencing user model -->
 		First Name: <h:inputText id = "firstName" value="#{user.firstName}"  title = ""/><br/>
 		Last Name: <h:inputText id = "lastName" value="#{user.lastName}" title = "" /><br></br>
+		<!-- button action will call onSubmit method in formController -->
 		<h:commandButton action="#{formController.onSubmit()}" value="Done" />
 	</h:form>
 	</div>
