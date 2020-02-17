@@ -1,0 +1,24 @@
+.order-table{
+   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;	
+   border-collapse:collapse;
+   border:1px solid #000000;
+   width: 60%;
+}
+
+.order-table-header{
+	text-align: center;
+	background: none repeat scroll 0 0 #cfba6f;
+	border-botoom: 1px solid #BBBBB;
+	padding: 16px;
+}
+
+.order-table-odd-row{
+	text-align: center;
+	background: none repeat scroll 0 0 #945aff;
+	border-botoom: 1px solid #BBBBB;
+}
+.order-table-even-row{
+	text-align: center;
+	background: none repeat scroll 0 0 #cfba6f;
+	border-botoom: 1px solid #BBBBB;
+}
